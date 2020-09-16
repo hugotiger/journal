@@ -1,0 +1,30 @@
+{
+  "india-jaipur": {
+    "id": "india-jaipur",
+    "title": "Mock title no 1",
+    "image_src": "assets/india-jaipur.jpg",
+    "location": "Jaipur",
+    "country": "India"
+  },
+  "newzealand-ragian": {
+    "id": "newzealand-ragian",
+    "title": "Mock title no 2",
+    "image_src": "assets/newzealand-ragian.jpg",
+    "location": "Ragian",
+    "country": "New Zealand"
+  },
+  "spain-barcelona": {
+    "id": "spain-barcelona",
+    "title": "Mock title no 3",
+    "image_src": "assets/spain-barcelona.jpg",
+    "location": "Barcelona",
+    "country": "Spain"
+  },
+  "usa-pennsylvania": {
+    "id": "usa-pennsylvania",
+    "title": "Mock title no 4",
+    "image_src": "assets/usa-pennsylvania.jpg",
+    "location": "Pennsylvania",
+    "country": "USA"
+  }
+}
