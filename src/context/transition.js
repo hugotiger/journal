@@ -4,10 +4,10 @@ export const TransitionContext = createContext();
 
 export function TransitionProvider({ children }) {
   const [values, setValues] = useState({
-    width: 0,
-    height: 0,
-    x: 0,
-    y: 0,
+    width: 300,
+    height: 300,
+    x: "50%",
+    y: "50%",
   });
 
   function setBox(el) {
