@@ -7,8 +7,9 @@ export function TransitionProvider({ children }) {
     width: 300,
     height: 300,
     x: "50%",
-    y: "50%",
+    y: "20%",
   });
+  const [handoverId, setHandoverId] = useState(null);
 
   function setBox(el) {
     let boundingBox;
@@ -26,7 +27,9 @@ export function TransitionProvider({ children }) {
   }
 
   return (
-    <TransitionContext.Provider value={{ box: values, setBox }}>
+    <TransitionContext.Provider
+      value={{ box: values, setBox, handoverId, setHandoverId }}
+    >
       {children}
     </TransitionContext.Provider>
   );
