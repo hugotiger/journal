@@ -24,7 +24,7 @@ $ npm start
 ## Possible improvements
 
 - Make the transition hook more generic
-- Match css transform properties between shared element (e.g. scaling)
+- Match css style properties between shared element (e.g. transform properties)
 - Better support for browser navigation
   - Infer which element is transitioning
 - Progressive image loading
