@@ -4,7 +4,7 @@ Journal is a super simple travel blog concept showcasing some fancy animations c
 
 The main feature is route transitions with shared components (images in this case).
 
-## Technologies used
+## Main Technologies used
 
 - [React](https://reactjs.org/)
 - [Framer Motion](https://www.framer.com/motion/)
@@ -20,8 +20,6 @@ $ cd journal
 $ npm install
 $ npm start
 ```
-
-## Possible improvements
 
 ## Possible improvements
 
