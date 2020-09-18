@@ -30,3 +30,4 @@ $ npm start
 - Better support for browser navigation
   - Infer which element is transitioning
 - Progressive image loading
+- Mobile support
