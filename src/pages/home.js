@@ -1,24 +1,22 @@
 import React from "react";
+
+// Layout
 import { Container, Row, Col } from "react-grid-system";
-import { motion } from "framer-motion";
 
 // Components
 import { StoryCard } from "../components/story-card";
 
 // Data
 import data from "../assets/data.json";
-// import { Link } from "react-router-dom";
+import Header from "../components/header";
+import Section from "../components/section";
 
 export default function Home() {
   return (
-    <motion.div>
-      <Container>
+    <>
+      <Header />
+      <Section title="Featured storys" subtitle="2019 - 2020">
         <Row>
-          <motion.div style={{ background: "tomato", height: 100 }}>
-            Hello
-          </motion.div>
-        </Row>
-        <Row style={{ marginTop: 100 }}>
           <Col sm={4}>
             <StoryCard story={data["india-jaipur"]} />
           </Col>
@@ -43,7 +41,7 @@ export default function Home() {
             <StoryCard story={data["usa-pennsylvania"]} />
           </Col>
         </Row>
-      </Container>
-    </motion.div>
+      </Section>
+    </>
   );
 }
