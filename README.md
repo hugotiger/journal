@@ -4,6 +4,8 @@ Journal is a super simple travel blog concept showcasing some fancy animations c
 
 The main feature is route transitions with shared components (images in this case).
 
+<img src="https://user-images.githubusercontent.com/49451774/93613890-bba73500-f9d1-11ea-8f42-b1555057b1ef.png" width="50%" style="margin: 0 auto;">
+
 ## Main Technologies used
 
 - [React](https://reactjs.org/)

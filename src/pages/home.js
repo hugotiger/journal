@@ -1,7 +1,7 @@
 import React from "react";
 
 // Layout
-import { Container, Row, Col } from "react-grid-system";
+import { Row, Col } from "react-grid-system";
 
 // Components
 import { StoryCard } from "../components/story-card";
