@@ -31,3 +31,4 @@ $ npm start
   - Infer which element is transitioning
 - Progressive image loading
 - Mobile support
+- Update transition on viewport resize
