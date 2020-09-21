@@ -22,7 +22,7 @@ const Button = styled(motion.button)`
     border: 1px solid black;
     border-radius: 999px;
     margin-right: 1rem;
-    transition: background-color 0.2s;
+    transition: background-color 0.4s;
     will-change: background-color;
   }
 
