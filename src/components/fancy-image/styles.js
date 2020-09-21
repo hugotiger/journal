@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
-// TODO: Handle situation where both width and height is set
 const FancyImage = styled(motion.div)`
   width: ${(props) => props.width || "100%"};
   height: ${(props) => props.height || "100%"};

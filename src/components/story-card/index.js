@@ -1,15 +1,22 @@
 import React, { useState } from "react";
 import { Styled } from "./styles";
-import { FancyImg } from "../fancy-image";
-import { useHistory } from "react-router-dom";
 import { motion } from "framer-motion";
 
 // Hooks
 import { useTransition } from "../../hooks";
+import { useHistory } from "react-router-dom";
+
+// Components
+import { FancyImg } from "../";
 
 const transition = { duration: 0.3, ease: [0.43, 0.13, 0.23, 0.96] };
 
-export function StoryCard({ size = "regular", story, imageSrc, ...restProps }) {
+export default function StoryCard({
+  size = "regular",
+  story,
+  imageSrc,
+  ...restProps
+}) {
   const { setBox, handoverId, setHandoverId } = useTransition();
   const history = useHistory();
   const [willHandover, setWillHandover] = useState(false);

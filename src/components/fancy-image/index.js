@@ -1,7 +1,7 @@
 import React from "react";
 import { Styled } from "./styles";
 
-export function FancyImg({
+export default function FancyImg({
   width,
   height,
   aspectRatio,
