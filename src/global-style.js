@@ -3,6 +3,9 @@ import { normalize } from "styled-normalize";
 
 export const GlobalStyle = createGlobalStyle`
     ${normalize}
+    * {
+        box-sizing: border-box;
+    }
     html,body {
         font-family: 'Poppins', 'Helvetica', 'Arial', sans-serif;
         -webkit-font-smoothing: antialiased;

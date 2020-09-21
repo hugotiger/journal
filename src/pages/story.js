@@ -1,12 +1,15 @@
 import React from "react";
 import { motion } from "framer-motion";
+
+// Hooks
 import { useTransition } from "../hooks";
 import { useParams, useHistory } from "react-router-dom";
-import { FancyImg } from "../components/fancy-image";
+
+// Components
+import { FancyImg, BackButton } from "../components";
 
 // Assets
 import data from "../assets/data.json";
-import BackButton from "../components/back-button";
 
 const transition = { duration: 0.8, ease: [0.4, 0.07, 0.2, 0.93] };
 
@@ -20,9 +23,23 @@ export default function Story() {
     return <p>Could not find story</p>;
   }
 
-  //TODO: Gör box till null om inga värden finns elr dylikt
-  //      Fadea bara opacity ifall dessa är null
-  //      Samma sak kanske går att göra på homepagen
+  // If box isn't defined use a fade in/out instead
+  const initial = box
+    ? {
+        width: box.width,
+        height: box.height,
+        left: box.x,
+        top: box.y,
+      }
+    : { opacity: 0 };
+
+  const animate = {
+    opacity: 1,
+    width: "33.33%",
+    height: "100%",
+    left: 0,
+    top: 0,
+  };
 
   const story = data[storyId];
 
@@ -33,31 +50,10 @@ export default function Story() {
       <FancyImg
         src={image}
         style={{ position: "fixed", zIndex: 50 }}
-        initial={{
-          width: box.width,
-          height: box.height,
-          left: box.x,
-          top: box.y,
-        }}
-        animate={{
-          width: "33.33%",
-          height: "100%",
-          left: 0,
-          top: 0,
-          transition: {
-            ...transition,
-          },
-        }}
-        exit={{
-          width: box.width,
-          height: box.height,
-          left: box.x,
-          top: box.y,
-          transition: {
-            ...transition,
-          },
-        }}
-        alt="hadå"
+        initial={initial}
+        animate={animate}
+        exit={initial}
+        transition={transition}
       />
       <motion.div
         style={{
