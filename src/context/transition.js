@@ -1,15 +1,15 @@
-import React, { useState, createContext } from "react";
+import React, { useState, useEffect, createContext } from "react";
 
 export const TransitionContext = createContext();
 
 export function TransitionProvider({ children }) {
-  const [values, setValues] = useState({
-    width: 300,
-    height: 300,
-    x: "50%",
-    y: "20%",
-  });
+  const [values, setValues] = useState(null);
   const [handoverId, setHandoverId] = useState(null);
+
+  useEffect(() => {
+    const box = localStorage.getItem("box");
+    box && setValues(JSON.parse(box));
+  }, []);
 
   function setBox(el) {
     let boundingBox;
@@ -24,6 +24,7 @@ export function TransitionProvider({ children }) {
       };
     }
     setValues(boundingBox);
+    localStorage.setItem("box", JSON.stringify(boundingBox));
   }
 
   return (
