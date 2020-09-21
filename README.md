@@ -26,6 +26,7 @@ $ npm start
 ## Possible improvements
 
 - [ ] Make the transition hook more generic
+- [x] Store values in localStorage
 - [ ] Match css style properties between shared element (e.g. transform properties)
 - [ ] Better support for browser navigation
   - [ ] Infer transitioning element
