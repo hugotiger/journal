@@ -9,9 +9,8 @@ import { TransitionProvider } from "./transition";
 //        That way I can change e.g. the gutter width on smaller devices
 setConfiguration({
   gutterWidth: 80,
-  // maxScreenClass: "xl",
   //                                      👇 only changed this one
-  containerWidths: [540, 740, 960, 1140, 1410],
+  containerWidths: [540, 740, 960, 1140, 1350],
 });
 
 export default function AppProviders({ children }) {
