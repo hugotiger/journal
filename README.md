@@ -1,10 +1,10 @@
 # Journal - Travel blog concept
 
-**LIVE DEMO:** [journal.hugotiger.com](https://journal.hugotiger.com)
-
 Journal is a super simple travel blog concept showcasing some fancy animations created using Framer Motion.
 
 The main feature is route transitions with shared components (images in this case).
+
+**LIVE DEMO:** [journal.hugotiger.com](https://journal.hugotiger.com)
 
 > <img src="https://user-images.githubusercontent.com/49451774/93613890-bba73500-f9d1-11ea-8f42-b1555057b1ef.png" width="80%" alt="Showcase image">
 
@@ -16,7 +16,7 @@ The main feature is route transitions with shared components (images in this cas
 
 ## Setup
 
-To run this project, clone it and install it locally using npm:
+To run this project locally, clone it and install it using npm:
 
 ```
 $ git clone git@github.com:hugotiger/journal.git
