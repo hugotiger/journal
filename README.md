@@ -1,6 +1,6 @@
 # Journal - Travel blog concept
 
-**LIVE DEMO:** journal.hugotiger.com
+**LIVE DEMO:** [journal.hugotiger.com](https://journal.hugotiger.com)
 
 Journal is a super simple travel blog concept showcasing some fancy animations created using Framer Motion.
 
